@@ -1,10 +1,13 @@
 import React from "react"
+import { Link } from "gatsby"
+import { FaRProject } from "react-icons/fa"
 
 const Navbar = () => {
   return (
     <div>
       <h1>I'm navbar</h1>
-      <div>im navbar link</div>
+      <Link to="/">Home</Link>
+      <Link to="/rooms">Rooms</Link>
     </div>
   )
 }
