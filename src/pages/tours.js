@@ -7,10 +7,7 @@ export default class tours extends Component {
     return (
       <Layout>
         hello from tours page!
-        <div>
-          <Button big>first button</Button>
-          <Button color="#f15025">second button</Button>
-        </div>
+        <div></div>
       </Layout>
     )
   }
