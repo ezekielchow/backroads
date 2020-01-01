@@ -12,7 +12,7 @@ export default ({ data }) => (
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner
         title="continue exploring"
-        info="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, autem? Labore cum deserunt voluptatum reiciendis, totam illo ducimus qui impedit enim harum? Quasi, tempore numquam. Fugiat magnam inventore ipsum illo?"
+        info="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, autem? Totam illo ducimus qui impedit enim harum? Quasi, tempore numquam. Fugiat magnam inventore ipsum illo?"
       >
         <AniLink fade to="/tours" className="btn-white">
           explore tours
