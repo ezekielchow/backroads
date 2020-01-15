@@ -25,3 +25,11 @@
     width: 400px;
   }
 }
+.show-nav {
+  max-height: 400px;
+  transition: var(--mainTransition);
+}
+.hide-nav {
+  max-height: 0;
+  overflow: hidden;
+}
