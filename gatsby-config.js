@@ -11,8 +11,8 @@ module.exports = {
     twitterUsername: "@ezekiel_chow",
     image: {
       path: "/defaultBcg.jpeg",
-      width: 1000,
-      height: 684,
+      width: 400,
+      height: 300,
     },
     siteUrl: "https://tourasia.netlify.com",
     titleTemplate: "%s · BackRoads",
