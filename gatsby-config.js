@@ -8,9 +8,10 @@ module.exports = {
     description:
       "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure",
     author: "@ezekielchow",
-    data: {
-      age: 24,
-    },
+    twitterUsername: "@ezekiel_chow",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://tourasia.netlify.com",
+    titleTemplate: "%s · BackRoads",
   },
   plugins: [
     {
@@ -33,5 +34,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
+    `gatsby-plugin-react-helmet`,
   ],
 }

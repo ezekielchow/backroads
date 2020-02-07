@@ -24,8 +24,6 @@ const Blog = ({ data }) => {
         )
       },
       "embedded-entry-block": node => {
-        console.log(node)
-
         const { title, image, text } = node.data.target.fields
 
         return (
