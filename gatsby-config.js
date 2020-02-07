@@ -32,6 +32,14 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://tourasia.netlify.com",
+        sitemap: "https://tourasia.netlify.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
@@ -39,5 +47,6 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
   ],
 }
