@@ -40,6 +40,17 @@ module.exports = {
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `BackRoads`,
+        short_name: `BackRoads`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#3fd0d4`,
+        display: `standalone`,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
@@ -48,5 +59,6 @@ module.exports = {
     `gatsby-plugin-playground`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    "gatsby-plugin-offline",
   ],
 }
