@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql, useStaticQuery } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
 const SEO = ({ title, description, image, pathname, article }) => {
   return (
@@ -14,7 +14,7 @@ const SEO = ({ title, description, image, pathname, article }) => {
             titleTemplate,
             defaultDescription,
             siteUrl,
-            defaultImage,
+            image: { defaultImage, imageWidth, imageHeight },
             twitterUsername,
           },
         },
@@ -33,6 +33,8 @@ const SEO = ({ title, description, image, pathname, article }) => {
               titleTemplate={titleTemplate}
             >
               <meta name="description" content={seo.description} />
+
+              {/* Facebook metas */}
               <meta name="image" content={seo.image} />
               {seo.url && <meta property="og:url" content={seo.url} />}
               {(article ? true : null) && (
@@ -43,6 +45,14 @@ const SEO = ({ title, description, image, pathname, article }) => {
                 <meta property="og:description" content={seo.description} />
               )}
               {seo.image && <meta property="og:image" content={seo.image} />}
+              {seo.imageWidth && (
+                <meta property="og:image:width" content="seo.imageWidth" />
+              )}
+              {seo.imageWidth && (
+                <meta property="og:image:width" content="seo.imageWidth" />
+              )}
+
+              {/* Twitter metas */}
               <meta name="twitter:card" content="summary_large_image" />
               {twitterUsername && (
                 <meta name="twitter:creator" content={twitterUsername} />
@@ -69,8 +79,12 @@ const query = graphql`
         titleTemplate
         defaultDescription: description
         siteUrl: siteUrl
-        defaultImage: image
         twitterUsername
+        image {
+          defaultImage: path
+          imageWidth: width
+          imageHeight: height
+        }
       }
     }
   }

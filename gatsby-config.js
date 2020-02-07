@@ -9,7 +9,11 @@ module.exports = {
       "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure",
     author: "@ezekielchow",
     twitterUsername: "@ezekiel_chow",
-    image: "/defaultBcg.jpeg",
+    image: {
+      path: "/defaultBcg.jpeg",
+      width: 1000,
+      height: 684,
+    },
     siteUrl: "https://tourasia.netlify.com",
     titleTemplate: "%s · BackRoads",
   },
