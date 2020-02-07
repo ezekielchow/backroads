@@ -5,6 +5,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/blog.module.css"
 import BlogCard from "../components/Blog/BlogCard"
 import Title from "../components/Title"
+import SEO from "../components/SEO"
 
 const Blog = props => {
   const { current, numPages } = props.pageContext
@@ -14,9 +15,10 @@ const Blog = props => {
   const isLast = current === numPages
 
   const previousPage = current - 1 === 1 ? `/blogs` : `/blogs/${current - 1}`
-  const nextPage = `blogs/${current + 1}`
+  const nextPage = `/blogs/${current + 1}`
   return (
     <Layout>
+      <SEO title="Blogs" />
       <section className={styles.blog}>
         <Title title="latest" subtitle="post" />
         <div className={styles.center}>
@@ -36,7 +38,7 @@ const Blog = props => {
               <AniLink
                 key={i}
                 fade
-                to={`blogs/${i === 0 ? "" : i + 1}`}
+                to={`/blogs/${i === 0 ? "" : i + 1}`}
                 className={
                   i + 1 === current
                     ? `${styles.link} ${styles.active}`
