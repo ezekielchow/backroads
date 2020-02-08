@@ -49,6 +49,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#3fd0d4`,
         display: `standalone`,
+        icon: `src/images/flight.png`,
       },
     },
     `gatsby-plugin-sass`,
