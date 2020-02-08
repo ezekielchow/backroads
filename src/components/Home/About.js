@@ -41,9 +41,6 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eum
             odit atque?
           </p>
-          <button type="button" className="btn-primary">
-            read more
-          </button>
         </article>
       </div>
     </section>
