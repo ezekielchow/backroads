@@ -43,6 +43,10 @@ const SEO = ({
               title={seo.title}
               titleTemplate={titleTemplate}
             >
+              <meta
+                name="google-site-verification"
+                content="fQQycs6DOLQYr9mjJjyDCeIkRT2gZ6WHzW_fzpC5ukA"
+              />
               <meta name="description" content={seo.description} />
 
               {/* Facebook metas */}
